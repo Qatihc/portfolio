@@ -1,9 +1,12 @@
 .projects-page-container {
-  padding-top: 5rem;
+  padding-top: var(--padding-medium);
+  overflow: hidden;
+
 }
 
 .projects-header {
   text-align: center;
+  margin-bottom: var(--padding-small);
 }
 
 .projects-title {
@@ -21,5 +24,9 @@
 
   .projects-subtitle {
     font-size: var(--desktop-font-size-subtitle);
+  }
+
+  .projects-header {
+    margin-bottom: var(--padding-big);
   }
 }

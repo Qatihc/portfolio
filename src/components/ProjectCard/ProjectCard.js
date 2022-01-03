@@ -8,21 +8,22 @@ const ProjectCard = ({
   githubUrl,
   liveDemoUrl,
   shortDescription,
-  thumbnailImg 
+  thumbnailImg,
+  reverse
 }) => {
   return (
     <div className="project-card-container">
-      <div className="project-thumbnail-container">
-        <img className="project-thumbnail" src={thumbnailImg}></img>
+      <div className={"project-thumbnail-container" + (reverse ? " reverse" : "")}>
+        <img className="project-card-thumbnail" src={thumbnailImg}></img>
       </div>
       <div className="project-card-description">
         <h2 className="project-card-title">{title}</h2>
+        <p className="project-card-short-description">{shortDescription}</p>
         <ul className="project-card-tag-list">
           {tags && tags.map(tag => 
             <li className="project-card-tag">{tag}</li>
           )}
         </ul>
-        <p className="project-card-short-description">{shortDescription}</p>
         <nav className="project-card-links">
           {githubUrl && <a href={githubUrl}>github</a>}
           {liveDemoUrl && <a href={liveDemoUrl}>Live Demo</a>}

@@ -11,15 +11,15 @@
   thumbnailImg: imagen del proyecto que se mostrara en la pagina de proyectos.
 */
 
-import img from "./images/imagen_1.png"
+import img from "./images/imagen_3.png"
 
 const projectsData = [
   {
-    title: 'proyecto 1',
-    tags: ['js', 'java', 'script', 'ks y javascr'],
+    title: 'Cripto-Portfolio',
+    tags: ['Node', 'Express', 'MongoDb', 'Mongoose', 'React', 'Redux'],
     githubUrl: 'git',
     liveDemoUrl: 'livedemo',
-    shortDescription: 'nlaskdfknsafklnas flknaskl nfasl kn fank lsfn kalsflknas fknlas nklfk nlas fnlkasf nklasnklf alnksf lnk',
+    shortDescription: 'Aplicacion full stack CRUD desarrollada para guardar registro de las transacciones realizadas con criptomonedas. Actualiza los precios periodicamente con la ayuda de la API de Coingecko. Permite registrar nuevos usuarios, agregar, modificar y eliminar transacciones, y calcular retornos diarios, semanales y mensuales.',
     thumbnailImg: img
   },
   {
@@ -39,11 +39,11 @@ const projectsData = [
     thumbnailImg: img
   },
   {
-    title: 'proyecto 112321321',
-    tags: ['js', 'java', 'script', 'ks y javascr'],
+    title: 'Este portfolio!',
+    tags: ['React', 'React-router', 'Framer motion', 'Mucho CSS'],
     githubUrl: 'git',
     liveDemoUrl: 'livedemo',
-    shortDescription: 'nlaskdfknsafklnas flknaskl nfasl kn fank lsfn kalsflknas fknlas nklfk nlas fnlkasf nklasnklf alnksf lnk',
+    shortDescription: 'El portfolio es este portfolio que es este portfol;io es el portfolio este este este protfoililon and portoflio the port is the port of port usb',
     thumbnailImg: img
   }
 ]
