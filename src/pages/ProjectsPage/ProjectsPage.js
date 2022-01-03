@@ -23,7 +23,6 @@ const ProjectsPage = () => {
           <li 
             data-aos= {reverse ? "fade-right" : 'fade-left'}
             data-aos-duration="500"
-            data-aos-anchor-placement="top-top"
           >
             <ProjectCard
               title={project.title}
