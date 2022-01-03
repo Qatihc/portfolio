@@ -1,0 +1,25 @@
+.projects-page-container {
+  padding-top: 5rem;
+}
+
+.projects-header {
+  text-align: center;
+}
+
+.projects-title {
+  font-size: var(--phone-font-size-title);
+}
+
+.projects-subtitle {
+  font-size: var(--phone-font-size-subtitle);
+}
+
+@media (min-width:851px) {
+  .projects-title {
+    font-size: var(--desktop-font-size-title);
+  }
+
+  .projects-subtitle {
+    font-size: var(--desktop-font-size-subtitle);
+  }
+}

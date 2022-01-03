@@ -13,10 +13,10 @@ const LandingPage = () => {
       >
         <p>Ab! <span className="accent-text">cd</span></p>
         <div className="middle-text">
-          <h1>Masdasd asnklCas</h1>
-          <p><span className="accent-text">Fasdull-stqack</span> develwaeoper</p>
+          <h1 className="landing-title">Rodrigo de,.,,, <br/> la republica</h1>
+          <p><span className="accent-text">no soy...</span> asdasdasd</p>
         </div>
-        <Link to="projects"><button class="accent-btn">Proyectos →</button></Link>
+        <Link to="projects" className="projects-btn-anchor"><button class="accent-btn">Proyectos →</button></Link>
       </motion.div>
     </div>
   )

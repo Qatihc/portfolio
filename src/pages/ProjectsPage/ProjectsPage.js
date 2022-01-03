@@ -1,5 +1,5 @@
 import "./ProjectsPage.css"
-import { projectsData } from "../../consts/";
+import { projectsData } from "../../projectsData/";
 import { ProjectCard } from "../../components/ProjectCard";
 
 const ProjectsPage = () => {
@@ -12,7 +12,14 @@ const ProjectsPage = () => {
       <ul className="projects-list">
         {projectsData.map((project) => 
           <li>
-            <ProjectCard project={project} />
+            <ProjectCard
+              title={project.title}
+              tags={project.tags}
+              githubUrl={project.githubUrl}
+              liveDemoUrl={project.liveDemoUrl}
+              shortDescription={project.shortDescription}
+              thumbnailImg={project.thumbnailImg}
+            />
           </li>
         )}
       </ul>

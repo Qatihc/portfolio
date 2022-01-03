@@ -1,5 +1,49 @@
 .project-card-container {
-  background-color: red;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 3rem 1rem;
+}
+
+.project-card-title {
+  font-size: 2rem;
+}
+
+.project-card-tag-list {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1em;
+  padding-bottom: 1rem;
+}
+
+.project-card-tag {
+  border: var(--color-text) 1px solid;
+  border-radius: 5px;
+  padding: .3rem;
+  flex-shrink: 0;
+}
+
+.project-card-links {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.project-card-links > a {
+  text-decoration: none;
+  position: relative;
+  color: var(--color-text);
+}
+
+.project-card-links > a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
   width: 100%;
-  height: 100%;
+  height: 4px;
+  background-color: var(--color-dark-accent);
+  transition: all .2s ease-in;
+}
+
+.project-card-links > a:hover::before {
+  background-color: var(--color-accent);
 }

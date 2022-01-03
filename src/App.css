@@ -1,16 +1,24 @@
 :root {
-  --color-background: #1F1F1F;
-  --color-text: #DDD;
-  --color-accent: #BF4080;
-  --color-dark-accent: #8a2c5b;
-  --height-header: 3em;
+  --color-background: #181818;
+  --color-text: #F2E9E4;
+  /* Gris claro: 84828F */
+  /* SUNGLOW: FDCA40 */
+  --color-accent: #6200ee;
+  --color-dark-accent: #3700b3;
+
+  --phone-font-size-title: 4rem;
+  --phone-font-size-subtitle: 1.5rem;
+
+  --desktop-font-size-title: 7rem;
+  --desktop-font-size-subtitle: 3rem;
+
+  --font-size-navbar: 1.5rem;
 }
 
 body {
   background: var(--color-background);
   color: var(--color-text);
   box-sizing: border-box;
-  overflow: hidden;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -21,4 +29,17 @@ body, h1, p {
 
 .accent-text {
   color: var(--color-accent);
+}
+
+img {
+  max-width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style: none;
 }
