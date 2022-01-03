@@ -1,0 +1,42 @@
+.navbar-container {
+  height: var(--height-header);
+}
+
+.navbar-list {
+  list-style: none;
+  min-width: max-content;
+  margin: 0;
+  padding: 1em 2em 0 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2em;
+}
+
+.navbar-list a {
+  text-decoration: none;
+  color: var(--color-text)
+}
+
+.navbar-item {
+  position: relative;
+  font-size: 1.4em;
+  cursor: pointer;
+}
+
+.navbar-item a::before {
+  background-color: var(--color-accent);
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 6px;
+  transition: all .35s ease-in-out;
+}
+
+.navbar-item a:hover::before {
+  width: 100%;
+}
+
+.navbar-item .active {
+  color: var(--color-accent)
+}
