@@ -21,13 +21,15 @@ const NavBar = () => {
   }
 
   return (
-    <header className="navbar-container">
-      <ul className={"navbar-list " + (navbarOpen ? "navbar-open" : '')}>
-        <li className="navbar-item" onClick={handleNavbarClose}><NavLink to="/">Inicio</NavLink></li>
-        <li className="navbar-item" onClick={handleNavbarClose}><NavLink to="/projects">Proyectos</NavLink></li>
-        <li className="navbar-item" onClick={handleNavbarClose}><NavLink to="/about">Sobre mi</NavLink></li>
-        <li className="navbar-item" onClick={handleNavbarClose}><NavLink to="/contact">Contacto</NavLink></li>
-      </ul>
+    <header className={"navbar-container " + (navbarOpen ? "navbar-open" : '')}>
+      <nav class={"navbar-list-container " + (navbarOpen ? "navbar-open" : '')}>
+        <ul className={"navbar-list " + (navbarOpen ? "navbar-open" : '')}>
+          <li className="navbar-item" onClick={handleNavbarClose}><NavLink to="/">Inicio</NavLink></li>
+          <li className="navbar-item" onClick={handleNavbarClose}><NavLink to="/projects">Proyectos</NavLink></li>
+          <li className="navbar-item" onClick={handleNavbarClose}><NavLink to="/about">Sobre mi</NavLink></li>
+          <li className="navbar-item" onClick={handleNavbarClose}><NavLink to="/contact">Contacto</NavLink></li>
+        </ul>
+      </nav>
       <div className={"navbar-open-btn " + (navbarOpen ? "navbar-open" : '')} onClick={handleNavbarToggle}>
         <div className="bar1"></div>
         <div className="bar2"></div>

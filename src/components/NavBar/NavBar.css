@@ -1,94 +1,35 @@
 .navbar-container {
-  position: fixed;
-  z-index: 3;
-  top: 0;
-  left: 0;
-
-  display: flex;
-  opacity: 0.97;
-
-  width: 100%;
-  box-shadow: 0 .5rem rgba(0,0,0,.1);
-  background-color: var(--color-background);
-
-  justify-content: flex-end;
-}
-
-/* .navbar-list {
-  position: absolute;
-  left: 0;
-
-  display: flex;
-  visibility: hidden;
-  opacity: 0;
-
-  min-width: max-content;
-  width: 100%;
-  margin: 0;
-  padding: 1em 2em 0 0;
-  height: 0;
-
-  gap: 3rem;
-  background-color: var(--color-background);
-
-  transition: 
-    all .8s cubic-bezier(1,0,0,1);
-  align-items: center;
-  list-style: none;
-
-  justify-content: center;
-  flex-direction: column;
-} */
-
-/* TEST */
-
-.navbar-list {
-  position: absolute;
+  position: sticky;
+  padding: 1rem 0;
   top: 0;
   right: 0;
   left: 0;
-  bottom: 0;
-  text-align: center;
-  opacity: 0;
-  z-index: -1;
-  visibility: hidden;
-  transition: all .375s;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 2rem;
+  z-index: 2;
+  background-color: var(--color-background);
+  box-shadow: 0 .5rem rgba(0,0,0,.1);
+  opacity: 0.96;
 }
 
-.navbar-list.navbar-open {
+.navbar-container.navbar-open {
   opacity: 1;
-  visibility: visible;
 }
 
-.navbar-list::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: -15px;
-  background: #FEDC2A;
-  transform-origin: 0 0;
-  transform: skew(-14deg) translateX(-120%);
-  transition: all .275s .1s;
+.navbar-list {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
 }
 
-.navbar-list.navbar-open::before {
-  transform: skew(-14deg) translateX(0);
-}
-
-
-.navbar-list a {
+.navbar-item a {
   text-decoration: none;
-  color: var(--color-text)
-}
-
-.navbar-item {
+  color: var(--color-text);
   position: relative;
   font-size: var(--font-size-navbar);
-  cursor: pointer;
 }
-
 /* Animacion navbar item */
 .navbar-item a::before {
   background-color: var(--color-accent);
@@ -111,16 +52,15 @@
 /* Boton burguer navbar */
 
 .navbar-open-btn {
-  display: inline-block;
+  display: none;
   cursor: pointer;
   padding: .2rem;
-  margin-right: 1rem;
 }
 
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
-  background-color: #333;
+  background-color: var(--color-text);
   margin: 6px 0;
   transition: all 0.6s ease-in-out;
 }
@@ -139,62 +79,60 @@
   transform: rotate(45deg) translate(-8px, -8px) ;
 }
 
-
-
-@media (min-width:600px) {
-  .navbar-container {
-    padding-bottom: .3rem;
+/* Animacion para mostrar navbar en telefono. */
+@media (max-width: 800px) {
+  .navbar-open-btn {
+    display: inline-block;
   }
 
-  .navbar-open-btn {
-    display: none;
+  .navbar-list-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    opacity: 0;
+    z-index: -1;
+    visibility: hidden;
+    transition: all .375s;
+  }
+
+  .navbar-list-container.navbar-open {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .navbar-list-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -15px;
+    background: #4d4a4c;
+    transform-origin: 0 0;
+    transform: skew(-14deg) translateX(-120%);
+    transition: all .275s .1s;
+  }
+
+  .navbar-list-container.navbar-open::before {
+  transform: skew(-14deg) translateX(0);
   }
 
   .navbar-list {
-    opacity: 1;
-    height: auto;
-    display: flex;
-    visibility: visible;
-    position: initial;
-    padding: 1em 2em 0 0;
-    flex-direction: row;
-    justify-content: flex-end;
-    padding-bottom: .5rem;
-    z-index: 10;
+    display: inline-flex;
+    flex-direction: column;
+    height: 93%; /* Should be 100%, but we have a notice message :D */
+    align-items: flex-end;
+    justify-content: center;
+    transform: translateX(-18%) skew(-16deg);
+  }
+
+  .navbar-item {
+    display: block;
+    margin: .5rem 0;
+    text-align: right;
+    transform: skew(16deg);
   }
 }
-
-/* Animacion abrir navbar */
-
-.navbar-list.navbar-open {
-  display: flex;
-  position: fixed;
-  width: 100%;
-  background-color: var(--color-background);
-  top: 0;
-  bottom: 0;
-  left: 0;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
-  visibility: visible;
-  opacity: 1;
-}
-
-/* .navbar-list.navbar-open {
-  display: flex;
-  position: fixed;
-  width: 100%;
-  background-color: var(--color-background);
-  top: 0;
-  bottom: 0;
-  left: 0;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
-  visibility: visible;
-  opacity: 1;
-  height: 100vh;
-} */
