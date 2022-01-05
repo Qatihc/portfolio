@@ -9,6 +9,17 @@
   margin-top: var(--padding-medium);
   border: var(--color-accent) 2px solid;
   border-radius: 7px;
+  transition: all .4s ease-in-out;
+}
+
+/* .project-card-thumbnail:hover {
+  transform: scale(1.1, 1.1);
+} */
+
+.project-card-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project-card-title {
@@ -17,7 +28,7 @@
 }
 
 .project-card-short-description {
-  color: var(--color-p);
+  color: var(--color-dark-text);
   padding-bottom: var(--pading-small);
 }
 
@@ -47,7 +58,7 @@
   gap: 2rem;
 }
 
-.project-card-links > a {
+/* .project-card-links > a {
   text-decoration: none;
   position: relative;
   color: var(--color-text);
@@ -61,10 +72,36 @@
   height: 2px;
   background-color: var(--color-dark-accent);
   transition: all .2s ease-in;
+} */
+
+.project-card-links {
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 1rem;
 }
 
 .project-card-links > a:hover::before {
   background-color: var(--color-accent);
+}
+
+.project-card-github-logo {
+  width: 5rem;
+  transition: all .2s linear;
+  box-sizing: border-box;
+  border-radius: 50%;
+  padding: .5rem;
+  /* Declaro el borde negro por que despues aplico el filtro */
+  border: 5px solid black;
+  /* Cambio el color del svg */
+  filter: invert(90%) sepia(3%) saturate(1203%) hue-rotate(320deg) brightness(109%) contrast(90%);
+}
+
+.project-card-github-logo:hover {
+  /* Cambio el color del svg */
+  filter: invert(11%) sepia(88%) saturate(5921%) hue-rotate(336deg) brightness(104%) contrast(103%);
 }
 
 @media (min-width: 1000px) {

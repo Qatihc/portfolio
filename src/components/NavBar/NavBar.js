@@ -20,6 +20,10 @@ const NavBar = () => {
     setNavbarOpen(false);
   }
 
+  const scrollToBottom = (e) => {
+    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+  }
+
   return (
     <header className={"navbar-container " + (navbarOpen ? "navbar-open" : '')}>
       <nav class={"navbar-list-container " + (navbarOpen ? "navbar-open" : '')}>
@@ -27,7 +31,7 @@ const NavBar = () => {
           <li className="navbar-item" onClick={handleNavbarClose}><NavLink to="/">Inicio</NavLink></li>
           <li className="navbar-item" onClick={handleNavbarClose}><NavLink to="/projects">Proyectos</NavLink></li>
           <li className="navbar-item" onClick={handleNavbarClose}><NavLink to="/about">Sobre mi</NavLink></li>
-          <li className="navbar-item" onClick={handleNavbarClose}><NavLink to="/contact">Contacto</NavLink></li>
+          <li className="navbar-item" onClick={handleNavbarClose}><a onClick={scrollToBottom}>Contacto</a></li>
         </ul>
       </nav>
       <div className={"navbar-open-btn " + (navbarOpen ? "navbar-open" : '')} onClick={handleNavbarToggle}>

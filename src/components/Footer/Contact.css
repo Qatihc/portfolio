@@ -1,0 +1,37 @@
+.contact-container {
+  padding: var(--padding-small) 0;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.contact-p {
+  text-align: center;
+  font-size: var(--desktop-font-size-project-card-details);
+  padding-bottom: var(--padding-small);
+}
+
+.svg-border {
+  border-radius: 50%;
+  border: 3px solid var(--color-text);
+  transition: all .3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.svg-border:hover {
+  border-color: var(--color-accent);
+}
+
+.svg-icon {
+  padding: 0.6rem;
+  width: 3rem;
+  filter: invert(90%) sepia(3%) saturate(1203%) hue-rotate(320deg) brightness(109%) contrast(90%);
+  box-sizing: border-box;
+}
+

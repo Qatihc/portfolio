@@ -1,0 +1,26 @@
+.accent-btn {
+  background-color: var(--color-accent);
+  color: var(--color-text);
+  font-size: 1.5rem;
+  padding: .8rem;
+  border: none;
+  transform:  
+    rotate(-5deg)
+    skew(-8deg);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out; 
+}
+
+.accent-btn:hover, .accent-btn:active, .accent-btn:focus {
+  box-shadow: 6px 6px 0 var(--color-dark-accent);
+  transform: 
+    translate(-10px, -10px)
+    skew(-8deg)
+    rotate(-5deg);
+}
+
+@media (min-width:851px) {
+  .accent-btn {
+    padding: 1.3rem;
+  }
+}

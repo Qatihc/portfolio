@@ -1,7 +1,5 @@
 .projects-page-container {
-  padding-top: var(--padding-medium);
   overflow: hidden;
-
 }
 
 .projects-header {
@@ -18,6 +16,11 @@
 }
 
 @media (min-width:851px) {
+
+  .projects-page-container {
+    padding-top: var(--padding-medium);
+  }
+
   .projects-title {
     font-size: var(--desktop-font-size-title);
   }

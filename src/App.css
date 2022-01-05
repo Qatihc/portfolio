@@ -1,21 +1,23 @@
 :root {
   --color-background: #181818;
+  --color-light-background: #363636;
+  --color-phone-navbar: #533c3c;
   --color-text: #F2E9E4;
+  --color-dark-text: #c4c2cc;
   /* Gris claro: 84828F */
   /* SUNGLOW: FDCA40 */
+  /* mmmm #66F6F1 */
   --color-accent: #f3004b;
+/*   --color-accent: #66F6F1; */
   --color-dark-accent: #aa093c;
-  --color-p: #c4c2cc;
+
 
   --phone-font-size-title: 4rem;
   --phone-font-size-subtitle: 1.5rem;
-
   --desktop-font-size-title: 7rem;
   --desktop-font-size-subtitle: 3rem;
-
   --desktop-font-size-project-card-title: 5rem;
   --desktop-font-size-project-card-details: 1.5rem;
-
   --font-size-navbar: 1.5rem;
 
   --padding-small: 1rem;
@@ -41,7 +43,6 @@
 body {
   background: var(--color-background);
   color: var(--color-text);
-  box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
 

@@ -24,12 +24,17 @@
   gap: 3rem;
 }
 
+.navbar-item {
+  cursor: pointer;
+}
+
 .navbar-item a {
   text-decoration: none;
   color: var(--color-text);
   position: relative;
   font-size: var(--font-size-navbar);
 }
+
 /* Animacion navbar item */
 .navbar-item a::before {
   background-color: var(--color-accent);
@@ -79,6 +84,7 @@
   transform: rotate(45deg) translate(-8px, -8px) ;
 }
 
+
 /* Animacion para mostrar navbar en telefono. */
 @media (max-width: 800px) {
   .navbar-open-btn {
@@ -110,7 +116,7 @@
     bottom: 0;
     left: 0;
     right: -15px;
-    background: #2c272a;
+    background: var(--color-phone-navbar);
     transform-origin: 0 0;
     transform: skew(-14deg) translateX(-120%);
     transition: all .275s .1s;
