@@ -1,0 +1,40 @@
+.about-page-container {
+  overflow: hidden;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: var(--padding-small);
+}
+
+.about-title {
+  font-size: var(--phone-font-size-title);
+}
+
+.about-p {
+  font-size: var(--desktop-font-size-project-card-details);
+  padding: 0 var(--padding-small);
+}
+
+
+@media (min-width: 1000px) {
+  .about-page-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    padding: var(--padding-medium) 0;
+  }
+
+  .about-header {
+    margin-bottom: var(--padding-medium);
+    grid-column: 2;
+  }
+
+  .about-title {
+    font-size: var(--desktop-font-size-title);
+  }
+
+  .about-p {
+    padding: 0;
+    grid-column: 2;
+  }
+}

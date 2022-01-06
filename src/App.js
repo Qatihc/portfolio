@@ -17,6 +17,7 @@ import { Footer } from "./components/Footer";
 function App() {
   return (
     <BrowserRouter>
+    <div className="main-container">
       <NavBar />
       <main>
         <ScrollToTopOnRouteChange />
@@ -27,6 +28,7 @@ function App() {
         </Routes>
       </main>
       <Footer />
+    </div>
     </BrowserRouter>
   );
 }
