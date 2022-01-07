@@ -17,13 +17,13 @@
   display: flex;
   margin: 0 1rem;
   flex-flow: column;
-  font-size: var(--phone-font-size-subtitle);
+  font-size: var(--font-size-subtitle);
   line-height: 1.2;
   align-items: flex-start;
 }
 
 .landing-title {
-  font-size: var(--phone-font-size-title);
+  font-size: var(--font-size-title);
   font-weight: 600;
 }
 
@@ -41,12 +41,7 @@
 }
 
 @media (min-width:851px) {
-  .landing-title {
-    font-size: var(--desktop-font-size-title);
-  }
-
   .text-container {
-    font-size: var(--desktop-font-size-subtitle);
     padding-left: var(--padding-big);
   }
 }

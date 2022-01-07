@@ -12,6 +12,7 @@
   background-color: var(--color-background);
   box-shadow: 0 .5rem rgba(0,0,0,.1);
   opacity: 0.9;
+  transition: all .375s;
 }
 
 .navbar-container.navbar-open {
@@ -116,6 +117,8 @@
     bottom: 0;
     left: 0;
     right: -15px;
+    /* El margin evita que la navbar quede incompleta al abrir y cerrar la barra de navegacion del browser. */
+    margin-bottom: -4rem;
     background: var(--color-phone-navbar);
     transform-origin: 0 0;
     transform: skew(-14deg) translateX(-120%);
@@ -129,7 +132,7 @@
   .navbar-list {
     display: inline-flex;
     flex-direction: column;
-    height: 93%; /* Should be 100%, but we have a notice message :D */
+    height: 100%; 
     align-items: flex-end;
     justify-content: center;
     transform: translateX(-18%) skew(-16deg);

@@ -8,25 +8,17 @@
 }
 
 .projects-title {
-  font-size: var(--phone-font-size-title);
+  font-size: var(--font-size-title);
 }
 
 .projects-subtitle {
-  font-size: var(--phone-font-size-subtitle);
+  font-size: var(--font-size-subtitle);
 }
 
-@media (min-width:851px) {
+@media (min-width:1300px) {
 
   .projects-page-container {
     padding-top: var(--padding-medium);
-  }
-
-  .projects-title {
-    font-size: var(--desktop-font-size-title);
-  }
-
-  .projects-subtitle {
-    font-size: var(--desktop-font-size-subtitle);
   }
 
   .projects-header {
