@@ -18,10 +18,10 @@ const LandingPage = () => {
           animate={{ opacity: 1, translateY: '0%'}}
           transition={{ ease: 'easeInOut', duration: 0.5 }}
         >
-          <p>Absa</p>
+          <p>Hola! soy</p>
           <div className="middle-text">
-            <h1 className="landing-title">Rodrigo de,.,,, <br/> la republica</h1>
-            <p><span className="accent-text">no soy...</span> asdasdasd</p>
+            <h1 className="landing-title">Matias<br/>Casali</h1>
+            <p><span className="accent-text">full-stack</span> developer</p>
           </div>
           <Link to="projects" className="projects-btn-anchor"><Button>Proyectos →</Button></Link>
         </motion.div>

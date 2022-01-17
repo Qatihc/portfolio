@@ -12,23 +12,24 @@
 */
 
 import img from "./images/imagen_3.png"
+import pomodoroImg from "./images/pomodoro.png"
 
 const projectsData = [
   {
     title: 'Cripto-Portfolio',
-    tags: ['Node', 'Express', 'MongoDb', 'Mongoose', 'React', 'Redux'],
+    tags: ['Node', 'Express', 'MongoDb', 'Mongoose', 'React', 'Redux', 'Sass'],
     githubUrl: 'git',
     liveDemoUrl: 'livedemo',
     shortDescription: 'Aplicacion full stack CRUD desarrollada para guardar registro de las transacciones realizadas con criptomonedas. Actualiza los precios periodicamente con la ayuda de la API de Coingecko. Permite registrar nuevos usuarios, agregar, modificar y eliminar transacciones, y calcular retornos diarios, semanales y mensuales.',
     thumbnailImg: img
   },
   {
-    title: 'proyecto 1312312',
-    tags: ['js', 'java', 'script', 'ks y javascr'],
-    githubUrl: 'git',
-    liveDemoUrl: 'livedemo',
-    shortDescription: 'nlaskdfknsafklnas flknaskl nfasl kn fank lsfn kalsflknas fknlas nklfk nlas fnlkasf nklasnklf alnksf lnk',
-    thumbnailImg: img
+    title: 'Pomodoro',
+    tags: ['React','React helmet', 'CSS modules', 'Webpack'],
+    githubUrl: 'https://github.com/Qatihc/pomodoro',
+    liveDemoUrl: 'https://qatihc.github.io/pomodoro/',
+    shortDescription: 'Implementacion pomodoro ... TODO ...',
+    thumbnailImg: pomodoroImg
   },
   {
     title: 'proyecto 1332',
