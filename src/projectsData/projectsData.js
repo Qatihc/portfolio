@@ -13,6 +13,7 @@
 
 import img from "./images/imagen_3.png"
 import pomodoroImg from "./images/pomodoro.png"
+import recetasImg from "./images/recetas.png"
 
 const projectsData = [
   {
@@ -28,16 +29,16 @@ const projectsData = [
     tags: ['React','React helmet', 'CSS modules', 'Webpack'],
     githubUrl: 'https://github.com/Qatihc/pomodoro',
     liveDemoUrl: 'https://qatihc.github.io/pomodoro/',
-    shortDescription: 'Implementacion pomodoro ... TODO ...',
+    shortDescription: 'Implementacion en React de la tecnica Pomodoro, usada para administrar tiempo. Permite ajustar la duracion de los intervalos de descanso y de trabajo, y hace sonar una campana cuando terminan los intervalos seleccionados. Hace uso de React helmet para actualizar el estado actual del temporizador en el titulo de la pestaña. ',
     thumbnailImg: pomodoroImg
   },
   {
-    title: 'proyecto 1332',
-    tags: ['js', 'java', 'script', 'ks y javascr'],
-    githubUrl: 'git',
-    liveDemoUrl: 'livedemo',
-    shortDescription: 'nlaskdfknsafklnas flknaskl nfasl kn fank lsfn kalsflknas fknlas nklfk nlas fnlkasf nklasnklf alnksf lnk',
-    thumbnailImg: img
+    title: 'Buscador recetas',
+    tags: ['React', 'Css modules', 'Axios', 'Framer motion'],
+    githubUrl: 'https://github.com/Qatihc/buscar_receta_por_ingredientes',
+    liveDemoUrl: 'TODO',
+    shortDescription: 'Aplicacion sencilla desarrollada con React que haciendo uso de la API de Spoonacular muestra recetas que emplean algunos de los ingredientes que el usuario haya ingresado.',
+    thumbnailImg: recetasImg
   },
   {
     title: 'Este portfolio!',
