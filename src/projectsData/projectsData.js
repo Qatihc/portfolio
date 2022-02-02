@@ -14,15 +14,16 @@
 import img from "./images/imagen_3.png"
 import pomodoroImg from "./images/pomodoro.png"
 import recetasImg from "./images/recetas.png"
+import cryptoPortfolioImg from "./images/cryptoPortfolio.png"
 
 const projectsData = [
   {
     title: 'Cripto-Portfolio',
-    tags: ['Node', 'Express', 'MongoDb', 'Mongoose', 'React', 'Redux', 'Sass'],
-    githubUrl: 'git',
+    tags: ['Node', 'Express', 'JWT', 'MongoDb', 'Mongoose', 'Webpack', 'Babel', 'React', 'Redux', 'RTK Query', 'Styled Components'],
+    githubUrl: 'https://github.com/Qatihc/Crypto-Portfolio',
     liveDemoUrl: 'livedemo',
-    shortDescription: 'Aplicacion full stack CRUD desarrollada para guardar registro de las transacciones realizadas con criptomonedas. Actualiza los precios periodicamente con la ayuda de la API de Coingecko. Permite registrar nuevos usuarios, agregar, modificar y eliminar transacciones, y calcular retornos diarios, semanales y mensuales.',
-    thumbnailImg: img
+    shortDescription: 'Aplicacion full stack CRUD desarrollada para guardar registro de transacciones realizadas con criptomonedas. Permite registrar nuevos usuarios, agregar, modificar y eliminar transacciones. Usando la API de coingecko actualizo periodicamente los precios de las monedas que el usuario haya registrado.',
+    thumbnailImg: cryptoPortfolioImg
   },
   {
     title: 'Pomodoro',
