@@ -67,15 +67,14 @@
   }
 }
 
-
 body {
   background: var(--color-background);
   color: var(--color-text);
   font-family: 'Poppins', sans-serif;
 }
 
-.accent-text {
-  color: var(--color-accent);
+.accent {
+  color: var(--clr-accent-1);
 }
 
 img {

@@ -9,10 +9,8 @@ const ProjectCard = ({
   liveDemoUrl,
   shortDescription,
   thumbnailImg,
-  lightBackgroundThumbnail,
   reverse
 }) => {
-  console.log(lightBackgroundThumbnail)
   return (
     <div className={styles.cardContainer}>
       <div className={
@@ -39,7 +37,7 @@ const ProjectCard = ({
           {githubUrl && 
             <a href={githubUrl}> 
               <IconContainer borderSize={'5px'}>
-                <img src="github.svg" alt="github logo" class={styles.githubIcon}/>
+                <img src="github.svg" alt="github logo" className={styles.githubIcon}/>
               </IconContainer>
             </a>
           }

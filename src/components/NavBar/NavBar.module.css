@@ -1,4 +1,4 @@
-.navbar-container {
+.navbarContainer {
   position: sticky;
   padding: 1rem 0;
   top: 0;
@@ -15,30 +15,34 @@
   transition: all .375s;
 }
 
-.navbar-container.navbar-open {
+.navbarContainer.open {
   opacity: 1;
 }
 
-.navbar-list {
+.list {
   display: flex;
   flex-direction: row;
   gap: 3rem;
 }
 
-.navbar-item {
+.item{
   cursor: pointer;
 }
 
-.navbar-item a {
+.link {
   text-decoration: none;
-  color: var(--color-text);
+  color: var(--clr-gray-1);
   position: relative;
   font-size: var(--font-size-navbar);
 }
 
+:global .active {
+  color: var(--clr-accent-1)
+}
+
 /* Animacion navbar item */
-.navbar-item a::before {
-  background-color: var(--color-accent);
+.item a::before {
+  background-color: var(--clr-accent-1);
   content: '';
   position: absolute;
   bottom: 0;
@@ -47,17 +51,13 @@
   transition: all .35s ease-in-out;
 }
 
-.navbar-item a:hover::before {
+.item a:hover::before {
   width: 100%;
-}
-
-.navbar-item .active {
-  color: var(--color-accent)
 }
 
 /* Boton burguer navbar */
 
-.navbar-open-btn {
+.openBtn {
   display: none;
   cursor: pointer;
   padding: .2rem;
@@ -71,16 +71,16 @@
   transition: all 0.6s ease-in-out;
 }
 
-.navbar-open .bar1 {
+.open .bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
   transform: rotate(-45deg) translate(-9px, 6px) ;
 }
 
-.navbar-open .bar2 {
+.open .bar2 {
   opacity: 0;
 }
 
-.navbar-open .bar3 {
+.open .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
   transform: rotate(45deg) translate(-8px, -8px) ;
 }
@@ -88,11 +88,11 @@
 
 /* Animacion para mostrar navbar en telefono. */
 @media (max-width: 800px) {
-  .navbar-open-btn {
+  .openBtn {
     display: inline-block;
   }
 
-  .navbar-list-container {
+  .listContainer {
     position: fixed;
     top: 0;
     right: 0;
@@ -105,32 +105,32 @@
     transition: all .375s;
   }
 
-  .navbar-list-container.navbar-open {
+  .listContainer.open {
     opacity: 1;
     visibility: visible;
   }
 
-  .navbar-list-container::before {
+  .listContainer::before {
     content: '';
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: -15px;
-    box-shadow: 3px 0 var(--color-accent);
+    box-shadow: 3px 0 var(--clr-accent-1);
     /* El margin evita que la navbar quede incompleta al abrir y cerrar la barra de navegacion del browser. */
     margin-bottom: -4rem;
-    background: var(--color-phone-navbar);
+    background: var(--clr-gray-7);
     transform-origin: 0 0;
     transform: skew(-14deg) translateX(-120%);
     transition: all .275s .1s;
   }
 
-  .navbar-list-container.navbar-open::before {
+  .listContainer.open::before {
   transform: skew(-14deg) translateX(0);
   }
 
-  .navbar-list {
+  .list {
     display: inline-flex;
     flex-direction: column;
     height: 100%; 
@@ -139,7 +139,7 @@
     transform: translateX(-18%) skew(-16deg);
   }
 
-  .navbar-item {
+  .item {
     display: block;
     margin: .5rem 0;
     text-align: right;

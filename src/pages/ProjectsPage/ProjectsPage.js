@@ -15,11 +15,11 @@ const ProjectsPage = () => {
       <div className={styles.pageContainer}>
         <motion.div 
           className={styles.header}
-          initial={{ opacity: 0, translateX: '10%'}}
-          animate={{ opacity: 1, translateX: '0%'}}
-          transition={{ ease: 'easeInOut', duration: 0.5 }}
+          initial={{ opacity: 0, translateX: "10%"}}
+          animate={{ opacity: 1, translateX: "0%"}}
+          transition={{ ease: "easeInOut", duration: 0.5 }}
         >
-          <h2 className={styles.title}>Proyectos<span className={styles.accent}>.</span></h2>
+          <h2 className={styles.title}>Proyectos<span className="accent">.</span></h2>
           <p className={styles.subtitle}>Algunos de los proyectos en los que trabaje.</p>
         </motion.div>
         <ul>
@@ -27,7 +27,7 @@ const ProjectsPage = () => {
             const reverse = boolAlternate();
             return (
             <li 
-              data-aos= {reverse ? "fade-right" : 'fade-left'}
+              data-aos= {reverse ? "fade-right" : "fade-left"}
               data-aos-duration="500"
             >
               <ProjectCard

@@ -15,15 +15,11 @@
   font-size: var(--font-size-subtitle);
 }
 
-.accent {
-  color: var(--clr-accent-1);
-}
-
 @media (min-width:1300px) {
   .pageContainer {
     padding-top: var(--padding-medium);
   }
-  
+
   .header {
     margin-bottom: var(--padding-big);
   }
