@@ -1,6 +1,6 @@
-import "./ProjectCard.css"
-
+import styles from "./ProjectCard.module.css"
 import { Button } from "../Button";
+import { IconContainer } from "../IconContainer";
 
 const ProjectCard = ({ 
   title,
@@ -9,28 +9,40 @@ const ProjectCard = ({
   liveDemoUrl,
   shortDescription,
   thumbnailImg,
-
+  lightBackgroundThumbnail,
   reverse
 }) => {
+  console.log(lightBackgroundThumbnail)
   return (
-    <div className="project-card-container">
-      <div className={"project-thumbnail-container" + (reverse ? " reverse" : "")}>
-        <img className="project-card-thumbnail" src={thumbnailImg}></img>
+    <div className={styles.cardContainer}>
+      <div className={
+        (reverse ? `${styles.reverse} ` : "")
+      }>
+        <img className={styles.thumbnail} src={thumbnailImg}></img>
       </div>
-      <div className="project-card-information">
-        <div className="project-card-main-information">
-          <h2 className="project-card-title">{title}</h2>
-          <ul className="project-card-tag-list">
+      <div className={styles.cardDetails}>
+        <div className={''}>
+          <h2 className={styles.title}>{title}</h2>
+          <ul className={styles.tagsList}>
             {tags && tags.map(tag => 
-              <li className="project-card-tag">{tag}</li>
+              <li className={styles.tags}>{tag}</li>
             )}
           </ul>
-          <p className="project-card-short-description">{shortDescription}</p>
+          <p className={styles.description}>{shortDescription}</p>
         </div>
-        <nav className="project-card-links">
-          {liveDemoUrl && <a href={liveDemoUrl}><Button>Live Demo</Button></a>}
-          {githubUrl && <a href={githubUrl}><img src="github.svg" alt="github logo " class="project-card-github-logo"/></a>}
-{/*         {hasDetailsPage && <a href={githubUrl}>detalles</a>} */}
+        <nav className={styles.linkList}>
+          {liveDemoUrl && 
+            <a href={liveDemoUrl}>
+              <Button>Live Demo</Button>
+            </a>
+          }
+          {githubUrl && 
+            <a href={githubUrl}> 
+              <IconContainer borderSize={'5px'}>
+                <img src="github.svg" alt="github logo" class={styles.githubIcon}/>
+              </IconContainer>
+            </a>
+          }
         </nav>
       </div>
     </div>

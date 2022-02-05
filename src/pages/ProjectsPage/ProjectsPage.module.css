@@ -1,27 +1,30 @@
-.projects-page-container {
+.pageContainer {
   overflow: hidden;
 }
 
-.projects-header {
+.header {
   text-align: center;
   margin-bottom: var(--padding-small);
 }
 
-.projects-title {
+.title {
   font-size: var(--font-size-title);
 }
 
-.projects-subtitle {
+.subtitle {
   font-size: var(--font-size-subtitle);
 }
 
-@media (min-width:1300px) {
+.accent {
+  color: var(--clr-accent-1);
+}
 
-  .projects-page-container {
+@media (min-width:1300px) {
+  .pageContainer {
     padding-top: var(--padding-medium);
   }
-
-  .projects-header {
+  
+  .header {
     margin-bottom: var(--padding-big);
   }
 }

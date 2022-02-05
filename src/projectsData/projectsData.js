@@ -23,7 +23,8 @@ const projectsData = [
     githubUrl: 'https://github.com/Qatihc/Crypto-Portfolio',
     liveDemoUrl: 'livedemo',
     shortDescription: 'Aplicacion full stack CRUD desarrollada para guardar registro de transacciones realizadas con criptomonedas. Permite registrar nuevos usuarios, agregar, modificar y eliminar transacciones. Usando la API de coingecko actualizo periodicamente los precios de las monedas que el usuario haya registrado.',
-    thumbnailImg: cryptoPortfolioImg
+    thumbnailImg: cryptoPortfolioImg,
+    lightBackgroundThumbnail: true,
   },
   {
     title: 'Pomodoro',

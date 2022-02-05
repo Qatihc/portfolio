@@ -1,11 +1,11 @@
-import './Footer.css'
+import styles from './Footer.module.css'
 import Contact from './Contact';
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className={styles.footer}>
       <Contact />
-      <div><p className='hola'>© 2022 Matias Casali</p></div>
+      <div><p className={styles.text}>© 2022 Matias Casali</p></div>
     </footer>
   )
 }

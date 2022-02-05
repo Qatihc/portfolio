@@ -1,19 +1,21 @@
 :root {
-  /*   --color-background: #181818;
-  --color-light-background: #363636;
-  # 141b21
-  */
   --color-background: #18191A;
   --color-light-background: #272822;
   --color-phone-navbar: #272822;
   --color-text: #F5F6F7;
   --color-dark-text: #c4c2cc;
-  /* Gris claro: 84828F */
-  /* SUNGLOW: FDCA40 */
-  /* mmmm #66F6F1 */
-  /* #BA8FFF */
-  --color-accent: #f3004b;
-  --color-dark-accent: #aa093c;
+
+  --clr-gray-8: #18191A;
+  --clr-gray-7: #272822;
+  --clr-gray-6: #35362f;
+  --clr-gray-5: ;
+  --clr-gray-4: ;
+  --clr-gray-3: ;
+  --clr-gray-2: #c4c2cc;
+  --clr-gray-1: #F5F6F7;
+
+  --clr-accent-2: #aa093c;
+  --clr-accent-1: #f3004b;
 
 
   --font-size-title: 3rem;

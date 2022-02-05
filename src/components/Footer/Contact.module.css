@@ -1,22 +1,22 @@
-.contact-container {
+.container {
   padding: var(--padding-small) 0;
 }
 
-.icon-container {
+.iconContainer {
   display: flex;
   justify-content: center;
   gap: 3rem;
 }
 
-.contact-p {
+.text {
   text-align: center;
   font-size: var(--desktop-font-size-project-card-details);
   padding-bottom: var(--padding-small);
 }
 
-.svg-border {
+.svgBorder {
   border-radius: 50%;
-  border: 3px solid var(--color-text);
+  border: 3px solid var(--clr-gray-1);
   transition: all .3s ease-in-out;
   display: flex;
   align-items: center;
@@ -24,11 +24,11 @@
   cursor: pointer;
 }
 
-.svg-border:hover {
-  border-color: var(--color-accent);
+.svgBorder:hover {
+  border-color: var(--clr-accent-1);
 }
 
-.svg-icon {
+.svgIcon {
   padding: 0.6rem;
   width: 3rem;
   filter: invert(90%) sepia(3%) saturate(1203%) hue-rotate(320deg) brightness(109%) contrast(90%);

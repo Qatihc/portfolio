@@ -1,42 +1,36 @@
-.project-card-container {
+.cardContainer {
   display: flex;
   flex-flow: column nowrap;
   padding: 0 1rem;
   margin-bottom: var(--padding-medium);
 }
 
-.project-card-thumbnail {
+.thumbnail {
   margin-top: var(--padding-medium);
-  border: var(--color-accent) 2px solid;
+  border: var(--clr-accent-1) 2px solid;
   border-radius: 7px;
   transition: all .4s ease-in-out;
+  opacity: 0.9;
 }
-
-.project-card-information {
+.cardDetails {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.project-card-title {
+.title {
   font-weight: normal;
   font-size: var(--font-size-project-card-title);
 }
 
-.project-card-short-description {
-  color: var(--color-dark-text);
-  font-size: var(--font-size-details);
-  padding-bottom: var(--pading-small);
-}
-
-.project-card-tag-list {
+.tagsList {
   display: flex;
   flex-flow: row wrap;
   gap: 1em;
   padding-bottom: 1rem;
 }
 
-.project-card-tag {
+.tags {
   border: var(--color-text) 3px solid;
   border-radius: 5px;
   padding: .3rem;
@@ -44,18 +38,18 @@
   transition: all .3s;
 }
 
-.project-card-tag:hover {
+.tags:hover {
   background-color: var(--color-text);
   color: var(--color-background);
 }
 
-.project-card-links {
-  display: flex;
-  justify-content: flex-start;
-  gap: 2rem;
+.description {
+  color: var(--color-dark-text);
+  font-size: var(--font-size-details);
+  padding-bottom: var(--pading-small);
 }
 
-.project-card-links {
+.linkList {
   display: flex;
   flex-direction: row nowrap;
   justify-content: space-between;
@@ -63,25 +57,12 @@
   padding-top: 1rem;
 }
 
-.project-card-links > a:hover::before {
-  background-color: var(--color-accent);
-}
-
-.project-card-github-logo {
-  width: 5rem;
+.githubIcon {
   box-sizing: border-box;
-  border-radius: 50%;
-  padding: .5rem;
-  /* Declaro el borde negro por que despues aplico el filtro */
-  border: 5px solid black;
+  width: 4.5rem;
+  padding: .7rem;
   /* Cambio el color del svg */
   filter: invert(90%) sepia(3%) saturate(1203%) hue-rotate(320deg) brightness(109%) contrast(90%);
-  transition: all .2s linear;
-}
-
-.project-card-github-logo:hover {
-  /* Cambio el color del svg */
-  filter: invert(11%) sepia(88%) saturate(5921%) hue-rotate(336deg) brightness(104%) contrast(103%);
 }
 
 @media (min-width: 1000px) {
@@ -91,7 +72,7 @@
 }
 
 @media (min-width: 1300px) {
-  .project-card-container {
+  .cardContainer {
     padding: 0 var(--padding-big);
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -99,12 +80,12 @@
     margin-bottom: var(--padding-big);
   }
 
-  .project-card-title {
+  .title {
     font-size: var(--font-size-project-card-title);
     padding-bottom: var(--pading-small);
   }
 
-  .project-card-short-description {
+  .description {
     font-size: var(--font-size-details);
   }
 

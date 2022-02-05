@@ -1,7 +1,7 @@
 let bool = true;
-const boolAlternate = () => {
+const alternateBool = () => {
   bool = !bool;
   return bool;
 }
 
-export default boolAlternate;
+export default alternateBool;

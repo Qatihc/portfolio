@@ -1,8 +1,8 @@
-import './Button.css'
+import styles from './Button.module.css'
 
 const Button = ({ children }) => {
   return (
-    <button class="accent-btn">{children}</button>
+    <button class={styles.accentBtn}>{children}</button>
   )
 }
 

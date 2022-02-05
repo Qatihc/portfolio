@@ -1,9 +1,10 @@
-import "./ProjectsPage.css"
 import { projectsData } from "../../projectsData/";
 import { ProjectCard } from "../../components/ProjectCard";
 import { boolAlternate } from "../../utils";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
+
+import styles from "./ProjectsPage.module.css"
 
 const ProjectsPage = () => {
   return (
@@ -11,17 +12,17 @@ const ProjectsPage = () => {
     <Helmet>
       <title>Matias Casali | Proyectos  </title>
     </Helmet>
-      <div className="projects-page-container">
+      <div className={styles.pageContainer}>
         <motion.div 
-          className="projects-header"
+          className={styles.header}
           initial={{ opacity: 0, translateX: '10%'}}
           animate={{ opacity: 1, translateX: '0%'}}
           transition={{ ease: 'easeInOut', duration: 0.5 }}
         >
-          <h2 className="projects-title">Proyectos<span className="accent-text">.</span></h2>
-          <p className="projects-subtitle">Algunos de los proyectos en los que trabaje.</p>
+          <h2 className={styles.title}>Proyectos<span className={styles.accent}>.</span></h2>
+          <p className={styles.subtitle}>Algunos de los proyectos en los que trabaje.</p>
         </motion.div>
-        <ul className="projects-list">
+        <ul>
           {projectsData.map((project) => {
             const reverse = boolAlternate();
             return (

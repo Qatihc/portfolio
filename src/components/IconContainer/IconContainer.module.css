@@ -1,0 +1,13 @@
+.IconBorder {
+  border-radius: 50%;
+  border: 3px solid var(--clr-gray-1);
+  transition: all .3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.IconBorder:hover {
+  border-color: var(--clr-accent-1);
+}
