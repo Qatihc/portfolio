@@ -31,7 +31,7 @@
 }
 
 .tags {
-  border: var(--color-text) 3px solid;
+  border: var(--clr-gray-1) 3px solid;
   border-radius: 5px;
   padding: .3rem;
   flex-shrink: 0;
@@ -39,12 +39,12 @@
 }
 
 .tags:hover {
-  background-color: var(--color-text);
-  color: var(--color-background);
+  background-color: var(--clr-gray-1);
+  color: var(--clr-gray-8);
 }
 
 .description {
-  color: var(--color-dark-text);
+  color: var(--clr-gray-2);
   font-size: var(--font-size-details);
   padding-bottom: var(--pading-small);
 }

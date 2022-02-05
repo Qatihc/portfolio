@@ -19,7 +19,7 @@ function App() {
     <BrowserRouter>
     <div className="main-container">
       <NavBar />
-      <main>
+      <main className="router">
         <ScrollToTopOnRouteChange />
         <Routes>
           <Route path="/" element={<LandingPage/>}/>

@@ -1,16 +1,10 @@
 :root {
-  --color-background: #18191A;
-  --color-light-background: #272822;
-  --color-phone-navbar: #272822;
-  --color-text: #F5F6F7;
-  --color-dark-text: #c4c2cc;
-
   --clr-gray-8: #18191A;
   --clr-gray-7: #272822;
   --clr-gray-6: #35362f;
-  --clr-gray-5: ;
-  --clr-gray-4: ;
-  --clr-gray-3: ;
+  --clr-gray-5: #838181;
+  --clr-gray-4: #9e9d9d;
+  --clr-gray-3: #b4b4b4;
   --clr-gray-2: #c4c2cc;
   --clr-gray-1: #F5F6F7;
 
@@ -29,9 +23,20 @@
   --padding-big: 8rem;
   --padding-medium: 4rem;
 
+
+  --size-1: .25rem;
+  --size-2: .50rem;
+  --size-3: .75rem;
+  --size-4: 1rem;
+  --size-5: 1.5rem;
+  --size-6: 2rem;
+  --size-7: 3rem;
+  --size-8: 4rem;
+  --size-9: 6rem;
+  --size-10: 8rem;
 }
 
-@media (min-width: 350px) {
+@media (min-width: 500px) {
   :root {
     --font-size-title: 4rem;
     --font-size-project-card-title: 3.5rem;
@@ -40,7 +45,7 @@
   }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 800px) {
   :root {
   --font-size-title: 5rem;
   --font-size-project-card-title: 4rem;
@@ -49,7 +54,7 @@
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1300px) {
   :root {
   --font-size-title: 7rem;
   --font-size-project-card-title: 4rem;
@@ -68,8 +73,8 @@
 }
 
 body {
-  background: var(--color-background);
-  color: var(--color-text);
+  background: var(--clr-gray-8);
+  color: var(--clr-gray-1);
   font-family: 'Poppins', sans-serif;
 }
 
@@ -100,4 +105,10 @@ ul, ol {
 
 main {
   flex: 1 0 auto;
+}
+
+
+.router {
+  display: flex;
+  flex-direction: column;
 }

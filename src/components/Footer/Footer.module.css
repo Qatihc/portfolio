@@ -1,7 +1,8 @@
 .footer {
-  background-color: var(--color-light-background);
+  background-color: var(--clr-gray-7);
 }
 
 .text {
   text-align: center;
+  color: var(--clr-gray-5);
 }
