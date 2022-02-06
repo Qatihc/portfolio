@@ -26,11 +26,12 @@ const ProjectsPage = () => {
           {projectsData.map((project) => {
             const reverse = boolAlternate();
             return (
-            <section>
-              <li 
-                data-aos= {reverse ? "fade-right" : "fade-left"}
-                data-aos-duration="500"
-              >
+            <li
+              key={project.title}
+              data-aos= {reverse ? "fade-right" : "fade-left"}
+              data-aos-duration="500"
+            >
+              <section>
                 <ProjectCard
                   title={project.title}
                   tags={project.tags}
@@ -40,8 +41,8 @@ const ProjectsPage = () => {
                   thumbnailImg={project.thumbnailImg}
                   reverse={reverse}
                 />
-              </li>
-            </section>
+              </section>
+            </li>
             )}
           )}
         </ul>
