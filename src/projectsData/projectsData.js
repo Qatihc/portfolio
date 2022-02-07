@@ -20,7 +20,7 @@ const projectsData = [
     title: 'Cripto-Portfolio',
     tags: ['Node', 'Express', 'JWT', 'MongoDb', 'Mongoose', 'Webpack', 'Babel', 'React', 'Redux', 'RTK Query', 'Styled Components', 'Git'],
     githubUrl: 'https://github.com/Qatihc/Crypto-Portfolio',
-    liveDemoUrl: 'livedemo',
+    liveDemoUrl: 'https://crypto-portafolio.herokuapp.com/portfolio/coins',
     shortDescription: 'Aplicacion full stack CRUD desarrollada para guardar registro de transacciones realizadas con criptomonedas. Permite registrar nuevos usuarios, agregar, modificar y eliminar transacciones. Usando la API de coingecko actualizo periodicamente los precios de las monedas que el usuario haya registrado.',
     thumbnailImg: cryptoPortfolioImg,
     lightBackgroundThumbnail: true
