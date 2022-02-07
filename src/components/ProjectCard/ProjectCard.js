@@ -14,7 +14,7 @@ const ProjectCard = ({
   return (
     <div className={styles.cardContainer}>
       <div className={
-        (reverse ? `${styles.reverse} ` : "")
+        (reverse ? `${styles.reverse} ` : "") + styles.thumbnailContainer
       }>
         <img className={styles.thumbnail} src={thumbnailImg}></img>
       </div>
@@ -36,7 +36,7 @@ const ProjectCard = ({
           }
           {githubUrl && 
             <a href={githubUrl}> 
-              <IconContainer borderSize={'5px'}>
+              <IconContainer>
                 <img src="github.svg" alt="github logo" className={styles.githubIcon}/>
               </IconContainer>
             </a>

@@ -13,31 +13,25 @@
 .textContainer {
   display: flex;
   margin: 0 var(--size-4);
-  margin-top: 5rem;
+  margin-top: var(--size-11);
   flex-flow: column;
-  font-size: var(--font-size-subtitle);
+  font-size: var(--size-6);
   line-height: 1.2;
   align-items: flex-start;
 }
 
 .title {
-  font-size: var(--font-size-title);
+  font-size: var(--size-10);
   font-weight: 600;
 }
 
 .text {
-  margin-left: 1rem;
-  margin-bottom: 1.7rem;
+  margin-left: var(--size-5);
+  margin-bottom: var(--size-6);
 }
 
 .buttonContainer {
   width: fit-content;
-}
-
-@media (min-width: 500px) {
-  .textContainer {
-    font-size: var(--size-6);
-  }
 }
 
 @media (min-width: 800px) {
@@ -45,7 +39,11 @@
     justify-content: flex-start;
   }
   .textContainer {
+    font-size: var(--size-7);
     padding-left: var(--size-9);
+  }
+  .title {
+    font-size: var(--size-12);
   }
 }
 
@@ -54,6 +52,10 @@
     min-height: 90vh;
   }
   .textContainer {
-    padding-left: var(--size-10);
+    font-size: var(--size-7);
+    padding-left: var(--size-13);
+  }
+  .title {
+    font-size: var(--size-13);
   }
 }

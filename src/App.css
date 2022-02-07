@@ -30,10 +30,13 @@
   --size-4: 1rem;
   --size-5: 1.5rem;
   --size-6: 2rem;
-  --size-7: 3rem;
-  --size-8: 4rem;
-  --size-9: 6rem;
-  --size-10: 8rem;
+  --size-7: 2.5rem;
+  --size-8: 3rem;
+  --size-9: 3.5rem;
+  --size-10: 4rem;
+  --size-11: 4.5rem;
+  --size-12: 6rem;
+  --size-13: 8rem;
 }
 
 @media (min-width: 500px) {
@@ -107,7 +110,6 @@ ul, ol {
 main {
   flex: 1 0 auto;
 }
-
 
 .router {
   display: flex;

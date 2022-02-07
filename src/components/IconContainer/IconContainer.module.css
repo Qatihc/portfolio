@@ -1,4 +1,4 @@
-.IconBorder {
+.iconBorder {
   border-radius: 50%;
   border: 3px solid var(--clr-gray-1);
   transition: all .3s ease-in-out;
@@ -8,6 +8,6 @@
   cursor: pointer;
 }
 
-.IconBorder:hover {
+.iconBorder:hover {
   border-color: var(--clr-accent-1);
 }

@@ -11,7 +11,6 @@
   thumbnailImg: imagen del proyecto que se mostrara en la pagina de proyectos.
 */
 
-import img from "./images/imagen_3.png"
 import pomodoroImg from "./images/pomodoro.png"
 import recetasImg from "./images/recetas.png"
 import cryptoPortfolioImg from "./images/cryptoPortfolio.png"

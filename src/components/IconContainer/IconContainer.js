@@ -1,8 +1,8 @@
 import styles from './IconContainer.module.css'
 
-const IconContainer = ({ children, borderSize }) => {
+const IconContainer = ({ children, className }) => {
   return (
-    <div className={styles.IconBorder} style={{ borderWidth: borderSize }}>
+    <div className={`${styles.iconBorder} ${className}`}>
       {children}
     </div>
   )

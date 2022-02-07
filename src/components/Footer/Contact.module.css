@@ -1,5 +1,5 @@
 .container {
-  padding: var(--padding-small) 0;
+  padding: var(--size-4) 0;
 }
 
 .iconContainer {
@@ -11,7 +11,7 @@
 .text {
   text-align: center;
   font-size: var(--desktop-font-size-project-card-details);
-  padding-bottom: var(--padding-small);
+  padding-bottom: var(--size-4);
 }
 
 .svgBorder {
