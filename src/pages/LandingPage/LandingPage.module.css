@@ -1,6 +1,7 @@
 .pageContainer {
   position: relative;
   display: flex;
+  padding-bottom: var(--size-8);
   overflow: hidden;
   justify-content: center;
   background-color: var(--clr-gray-8);
@@ -49,6 +50,7 @@
 
 @media (min-width: 1300px) {
   .pageContainer {
+    padding: 0;
     min-height: 90vh;
   }
   .textContainer {
