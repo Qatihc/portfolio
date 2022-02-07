@@ -80,6 +80,7 @@ body {
 
 .accent {
   color: var(--clr-accent-1);
+  font-style: normal;
 }
 
 img {

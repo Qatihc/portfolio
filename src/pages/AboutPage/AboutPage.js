@@ -6,7 +6,7 @@ const AboutPage = () => {
   return (
     <>
     <Helmet>
-      <title>Matias Casali | Acerca de</title>
+      <title>atias Casali | Acerca de</title>
     </Helmet>
     <motion.div className={styles.pageContainer}>
         <motion.div 
@@ -17,11 +17,28 @@ const AboutPage = () => {
         >
           <h2 className={styles.title}>Sobre mi<span className="accent">.</span></h2>
         </motion.div>
-        <p className={styles.text}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis feugiat condimentum. Duis in bibendum mauris. Curabitur non dolor eu dolor vestibulum pellentesque id id urna. Vestibulum sed tincidunt metus, in consequat velit. Suspendisse laoreet, velit sit amet volutpat molestie, velit quam convallis magna, et feugiat dui odio id odio. Donec vitae ultrices mauris. Nam molestie libero in ligula molestie, et imperdiet ligula ullamcorper. Etiam molestie libero in convallis aliquet.
-
-Donec facilisis hendrerit orci, eget fringilla urna feugiat sed. Sed commodo nunc sed odio tincidunt ultricies. Donec viverra tempus vehicula. Nullam eu finibus magna, quis scelerisque risus. Fusce sit amet pharetra velit. Duis ut faucibus massa. Nulla ut interdum lorem. Donec congue dui nec mi vehicula, vel efficitur leo semper. Curabitur laoreet diam eros. Nunc rutrum quam lorem, id aliquam felis condimentum ac. Duis commodo rhoncus dignissim. Etiam odio urna, volutpat ut accumsan porta, tempor at neque. Quisque quis augue eu velit varius rhoncus. 
+        <section className={styles.text}>
+        <p className={styles.paragraph}>
+          Soy Matias Casali, estudiante de tercer año en la carrera Ciencias de la Computacion de la UBA. <br />
+          Me encanta la tecnologia y la programacion, trato todos los dias de aprender algo nuevo.
         </p>
+        <p className={styles.paragraph}>
+          En este momento estoy centrandome principalmente en mejorar mis habilidades
+          como desarrollador web, incluyendo <em className="accent">HTML, JS vanilla, CSS </em>
+          y tecnologias como <em className="accent">React, Redux y Styled Components</em>. <br />
+        </p>
+        <p className={styles.paragraph}>
+          Algunos de mis proyectos necesitaron APIs que los soportaran, y las implemente
+          usando <em className="accent">NodeJS, Express y MongoDB</em>.
+        </p>
+        <p className={styles.paragraph}>
+          Ademas de la programacion web, me interesa expandir mi conocimiento en los lenguajes de programacion Rust y Go, 
+          y entender en mayor detalle como funcionan la criptografia y las criptomonedas.
+        </p>
+        <p className={styles.paragraph}>
+          Estoy abierto a cualquier tipo de colaboracion o propuesta laboral, asi que ante cualquier duda mandame un mail!
+        </p>
+        </section>
       </motion.div>
     </>
   )

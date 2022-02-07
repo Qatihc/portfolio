@@ -10,7 +10,7 @@ const ProjectsPage = () => {
   return (
     <>
     <Helmet>
-      <title>Matias Casali | Proyectos  </title>
+      <title>atias Casali | Proyectos  </title>
     </Helmet>
       <div className={styles.pageContainer}>
         <motion.div 

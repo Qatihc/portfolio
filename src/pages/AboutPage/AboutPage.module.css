@@ -14,10 +14,14 @@
 .text {
   padding: 0 var(--padding-small) var(--padding-medium) var(--padding-small);
   font-size: var(--font-size-details);
-  color: var(--color-dark-text);
+  color: var(--clr-gray-2);
 }
 
-@media (min-width: 1100px) {
+.paragraph {
+  margin-bottom: var(--size-3);
+}
+
+@media (min-width: 800px) {
   .pageContainer {
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
@@ -33,7 +37,7 @@
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1300px) {
   .pageContainer {
     grid-template-columns: 1fr 3fr 1fr;
     padding: var(--padding-medium) 0;

@@ -8,7 +8,8 @@ const LandingPage = () => {
   return (
     <>
       <Helmet>
-        <title>Matias Casali</title>
+        {/* La M es el favicon */}
+        <title>atias Casali</title>
       </Helmet>
       <div className={styles.pageContainer}>
         <motion.div 
@@ -20,7 +21,7 @@ const LandingPage = () => {
           <p>Hola! soy</p>
           <div className={styles.text}>
             <h1 className={styles.title}>Matias<br/>Casali</h1>
-            <p><span className="accent">full-stack</span> developer</p>
+            <p><em className="accent">full-stack</em> developer</p>
           </div>
           <Link to="projects" className={styles.buttonContainer}><Button>Proyectos →</Button></Link>
         </motion.div>
