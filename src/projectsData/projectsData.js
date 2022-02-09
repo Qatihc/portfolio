@@ -14,6 +14,7 @@
 import pomodoroImg from "./images/pomodoro.png"
 import recetasImg from "./images/recetas.png"
 import cryptoPortfolioImg from "./images/cryptoPortfolio.png"
+import fashionLandingImg from "./images/fashion.png"
 
 const projectsData = [
   {
@@ -40,6 +41,14 @@ const projectsData = [
     liveDemoUrl: 'TODO',
     shortDescription: 'Aplicacion desarrollada con React que permite al usuario ingresar una lista de ingredientes que tenga a mano, y luego usando la API de Spoonacular muestra una receta que use algunos de los ingredientes elegidos.',
     thumbnailImg: recetasImg
+  },
+  {
+    title: 'Fashion store',
+    tags: ['Scss', 'Webpack', 'Git'],
+    githubUrl: 'https://github.com/Qatihc/fashion-website-landing-page',
+    liveDemoUrl: 'https://qatihc.github.io/fashion-website-landing-page/',
+    shortDescription: 'Landing page creada a partir de un diseño publico de Figma con el objetivo de mejorar mis habilidades en SCSS y HTML.',
+    thumbnailImg: fashionLandingImg
   }
 ]
 
