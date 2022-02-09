@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.de5909cd.css",
-    "main.js": "/static/js/main.2d644f80.js",
+    "main.js": "/static/js/main.ad9bb40a.js",
     "static/media/fashion.png": "/static/media/fashion.76f78ce2c29b59e86897.png",
     "static/media/recetas.png": "/static/media/recetas.b4d3dce6b7e2eb55463f.png",
     "static/media/cryptoPortfolio.png": "/static/media/cryptoPortfolio.28827aef7903682e3ee5.png",
     "static/media/pomodoro.png": "/static/media/pomodoro.928fffae05aef58c2f19.png",
     "index.html": "/index.html",
     "main.de5909cd.css.map": "/static/css/main.de5909cd.css.map",
-    "main.2d644f80.js.map": "/static/js/main.2d644f80.js.map"
+    "main.ad9bb40a.js.map": "/static/js/main.ad9bb40a.js.map"
   },
   "entrypoints": [
     "static/css/main.de5909cd.css",
-    "static/js/main.2d644f80.js"
+    "static/js/main.ad9bb40a.js"
   ]
 }
