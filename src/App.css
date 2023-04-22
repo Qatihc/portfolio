@@ -8,9 +8,11 @@
   --clr-gray-2: #c4c2cc;
   --clr-gray-1: #F5F6F7;
 
+  --clr-accent-3: #9e113d;
   --clr-accent-2: #aa093c;
   --clr-accent-1: #f3004b;
 
+  --clr-background: var(--clr-gray-8);
 
   --font-size-title: 3rem;
   --font-size-project-card-title: 3rem;
@@ -37,6 +39,19 @@
   --size-11: 4.5rem;
   --size-12: 6rem;
   --size-13: 8rem;
+
+  --neon-near-shadow:     
+    0 0 5px var(--clr-accent-1),
+    0 0 10px var(--clr-accent-1),
+    0 0 20px var(--clr-accent-1);
+
+  --neon-mid-shadow: 
+    0 0 40px var(--clr-accent-1);
+
+  --neon-far-shadow:
+    0 0 80px var(--clr-accent-1),
+    0 0 100px var(--clr-accent-2),
+    0 0 150px var(--clr-accent-2);
 }
 
 @media (min-width: 500px) {
@@ -76,7 +91,7 @@
 }
 
 body {
-  background: var(--clr-gray-8);
+  background: var(--clr-background);
   color: var(--clr-gray-1);
   font-family: 'Poppins', sans-serif;
 }
@@ -114,4 +129,14 @@ main {
 .router {
   display: flex;
   flex-direction: column;
+}
+
+.neon {
+  color: var(--clr-gray-1);
+  text-shadow: var(--neon-near-shadow), var(--neon-mid-shadow), var(--neon-far-shadow);
+}
+
+.light-neon {
+  color: var(--clr-gray-1);
+  text-shadow: var(--neon-near-shadow);
 }

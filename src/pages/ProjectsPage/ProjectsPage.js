@@ -19,7 +19,7 @@ const ProjectsPage = () => {
           animate={{ opacity: 1, translateX: "0%"}}
           transition={{ ease: "easeInOut", duration: 0.5 }}
         >
-          <h2 className={styles.title}>Proyectos<span className="accent">.</span></h2>
+          <h2 className={styles.title}>Proyectos<span className="light-neon">.</span></h2>
           <p className={styles.subtitle}>Algunos de los proyectos en los que trabaje.</p>
         </motion.div>
         <ul>

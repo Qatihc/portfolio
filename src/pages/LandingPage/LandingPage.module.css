@@ -1,28 +1,33 @@
 .pageContainer {
   position: relative;
   display: flex;
+  align-items: center;
+  justify-content: center;
   padding-bottom: var(--size-8);
   overflow: hidden;
-  justify-content: center;
-  background-color: var(--clr-gray-8);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%234b4b4b' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23212121' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%232a2a2a' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23505050' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%233f3f3f' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%232b2b2b' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23222222' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23323232' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23282828' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23373737' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23191919' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23262626' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
-  background-position: 50%;
-  background-size: cover;
   flex-grow: 1;
+}
+
+.neonContainer {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 1200px;
+  height: 600px;
 }
 
 .textContainer {
   display: flex;
-  margin: 0 var(--size-4);
-  margin-top: var(--size-11);
   flex-flow: column;
-  font-size: var(--size-6);
+  font-size: var(--size-5);
   line-height: 1.2;
   align-items: flex-start;
+  margin: 10px;
 }
 
 .title {
-  font-size: var(--size-10);
+  font-size: var(--size-8);
   font-weight: 600;
 }
 
@@ -35,16 +40,38 @@
   width: fit-content;
 }
 
-@media (min-width: 800px) {
-  .pageContainer {
-    justify-content: flex-start;
-  }
+.neonBorder {
+  position: absolute;
+  transform: scale(.3) rotate(45deg);
+}
+
+.topNeonBorder {
+  top: 0;
+  left: 50%;
+  transform-origin: top left;
+}
+
+.bottomNeonBorder {
+  bottom: 0;
+  right: 50%;
+  transform-origin: bottom right;
+}
+
+@media (min-width: 550px) {
   .textContainer {
     font-size: var(--size-7);
-    padding-left: var(--size-9);
   }
   .title {
-    font-size: var(--size-12);
+    font-size: var(--size-10);
+  }
+  .neonBorder {
+    transform: scale(.35);
+  }
+  .topNeonBorder {
+    left: 0;
+  }
+  .bottomNeonBorder {
+    right: 0;
   }
 }
 
@@ -55,9 +82,8 @@
   }
   .textContainer {
     font-size: var(--size-7);
-    padding-left: var(--size-13);
   }
   .title {
-    font-size: var(--size-13);
+    font-size: var(--size-10);
   }
 }

@@ -3,6 +3,7 @@ import { Button } from "../../components/Button";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import styles from "./LandingPage.module.css";
+import { NeonBorderBottom, NeonBorderTop } from "../../components/NeonBorder";
 
 const LandingPage = () => {
   return (
@@ -12,19 +13,19 @@ const LandingPage = () => {
         <title>atias Casali</title>
       </Helmet>
       <div className={styles.pageContainer}>
-        <motion.div 
-          className={styles.textContainer}
-          initial={{ opacity: 0, translateY: '-20%'}}
-          animate={{ opacity: 1, translateY: '0%'}}
-          transition={{ ease: 'easeInOut', duration: 0.5 }}
-        >
-          <p>Hola! soy</p>
-          <div className={styles.text}>
-            <h1 className={styles.title}>Matias<br/>Casali</h1>
-            <p><em className="accent">full-stack</em> developer</p>
+        <div className={styles.neonContainer}>
+          <NeonBorderTop className={styles.neonBorder + " " + styles.topNeonBorder}/>
+          <NeonBorderBottom className={styles.neonBorder + " " + styles.bottomNeonBorder}/>
+          <div 
+            className={styles.textContainer}
+          >
+            <p><span className={"neon"}>Bienvenido!</span> soy</p>
+            <div className={styles.text}>
+              <h1 className={styles.title}>Matias<br/>Casali</h1>
+              <p><em className="neon">full-stack</em> developer</p>
+            </div>
           </div>
-          <Link to="projects" className={styles.buttonContainer}><Button>Proyectos →</Button></Link>
-        </motion.div>
+        </div>
       </div>
     </>
   )

@@ -16,7 +16,7 @@ const ProjectCard = ({
       <div className={
         (reverse ? `${styles.reverse} ` : "") + styles.thumbnailContainer
       }>
-        <img className={styles.thumbnail} src={thumbnailImg}></img>
+        <img className={styles.thumbnail + " neon-box"} src={thumbnailImg}></img>
       </div>
       <div className={styles.cardDetails}>
         <div className={''}>

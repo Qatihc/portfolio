@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <Contact />
-      <div><p className={styles.text}>© 2022 Matias Casali</p></div>
+      <div><p className={styles.text}>© 2023 Matias Casali</p></div>
     </footer>
   )
 }

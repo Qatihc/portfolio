@@ -11,6 +11,11 @@
   border-radius: 7px;
   transition: all .4s ease-in-out;
   opacity: 0.9;
+  box-shadow: var(--neon-near-shadow);
+}
+
+.thumbnail:hover {
+  box-shadow: var(--neon-near-shadow), var(--neon-mid-shadow);
 }
 
 .cardDetails {

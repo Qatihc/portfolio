@@ -1,6 +1,5 @@
-/* Contiene la informacion de los proyectos que voy a mostrar. */
+/* Contiene la informacion de los proyectos mostrados. */
 /* 
-  A continuacion explico que contiene cada campo. 
   Los que se encuentran entre parentesis son opcionales.
 
   title: titulo del proyecto.
@@ -47,7 +46,7 @@ const projectsData = [
     tags: ['Scss', 'Webpack', 'Git'],
     githubUrl: 'https://github.com/Qatihc/fashion-website-landing-page',
     liveDemoUrl: 'https://qatihc.github.io/fashion-website-landing-page/',
-    shortDescription: 'Landing page creada a partir de un diseño publico de Figma con el objetivo de mejorar mis habilidades en SCSS y HTML.',
+    shortDescription: 'Landing page estatica y responsive creada a partir de un diseño publico de Figma con el objetivo de mejorar mis habilidades en SCSS y HTML.',
     thumbnailImg: fashionLandingImg
   }
 ]
