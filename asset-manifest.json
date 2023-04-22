@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.1dc21258.css",
-    "main.js": "/static/js/main.4a28ed99.js",
+    "main.js": "/static/js/main.fa740518.js",
     "static/media/fashion.png": "/static/media/fashion.76f78ce2c29b59e86897.png",
     "static/media/recetas.png": "/static/media/recetas.b4d3dce6b7e2eb55463f.png",
     "static/media/cryptoPortfolio.png": "/static/media/cryptoPortfolio.28827aef7903682e3ee5.png",
     "static/media/pomodoro.png": "/static/media/pomodoro.928fffae05aef58c2f19.png",
     "index.html": "/index.html",
     "main.1dc21258.css.map": "/static/css/main.1dc21258.css.map",
-    "main.4a28ed99.js.map": "/static/js/main.4a28ed99.js.map"
+    "main.fa740518.js.map": "/static/js/main.fa740518.js.map"
   },
   "entrypoints": [
     "static/css/main.1dc21258.css",
-    "static/js/main.4a28ed99.js"
+    "static/js/main.fa740518.js"
   ]
 }
