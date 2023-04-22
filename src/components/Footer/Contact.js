@@ -22,7 +22,7 @@ const Contact = () => {
           </a>
         </li>
         <li>
-          <a>
+          <a href="mailto:matiascasali00@gmail.com">
             <IconContainer>
               <img alt="mail icon" src="mail.svg" className={styles.svgIcon} />
             </IconContainer>
